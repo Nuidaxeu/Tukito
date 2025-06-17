@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="../../Sources/offline_92825.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styless.css">
+    <title>No Signal</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="main-navbar">
+            <ul>
+                <li><a href="../../pages/main/index.html">Inicio</a></li>
+                <li><a href="../../pages/Seccion 2/index.html">Sin Señal</a></li>
+                <li><a href="index.html">Quiz</a></li> 
+            </ul>
+        </nav>
+    </header>
+    <main class="main-container">
+        <section class="test">
+            <h2>¿Cuánto dependés de Internet?</h2>
+            <p>Respondé estas preguntas y descubrí tu nivel de conexión (digital).</p>
+            <form id="internetTest">
+                <div class="question">
+                    <p>1. ¿Cómo te despertás cada día?</p>
+                    <label><input type="radio" name="q1" value="2"> Con la alarma del celular</label><br>
+                    <label><input type="radio" name="q1" value="0"> Con un despertador clásico</label><br>
+                </div>
+                <div class="question">
+                    <p>2. ¿Pagás cosas con el celular?</p>
+                    <label><input type="radio" name="q2" value="2"> Siempre</label><br>
+                    <label><input type="radio" name="q2" value="1"> A veces</label><br>
+                    <label><input type="radio" name="q2" value="0"> Nunca</label><br>
+                </div>
+                <div class="question">
+                    <p>3. ¿Cómo encontrás direcciones nuevas?</p>
+                    <label><input type="radio" name="q3" value="2"> Google Maps</label><br>
+                    <label><input type="radio" name="q3" value="1"> Pregunto</label><br>
+                    <label><input type="radio" name="q3" value="0"> Mapa en papel</label><br>
+                </div>
+                <div class="question">
+                    <p>4. ¿Podés pasar un día sin revisar redes sociales?</p>
+                    <label><input type="radio" name="q4" value="2"> Ni loco</label><br>
+                    <label><input type="radio" name="q4" value="1"> Lo intento</label><br>
+                    <label><input type="radio" name="q4" value="0"> Sin problema</label><br>
+                </div>
+                <div class="question">
+                    <p>5. ¿Dónde leés las noticias?</p>
+                    <label><input type="radio" name="q5" value="2"> Twitter o apps</label><br>
+                    <label><input type="radio" name="q5" value="1"> TV</label><br>
+                    <label><input type="radio" name="q5" value="0"> Diario en papel</label><br>
+                </div>
+                <div class="question">
+                    <p>6. ¿Guardás tus fotos en el celular o en la nube?</p>
+                    <label><input type="radio" name="q6" value="2"> Solo en la nube (Google Drive, iCloud)</label><br>
+                    <label><input type="radio" name="q6" value="1"> Ambas</label><br>
+                    <label><input type="radio" name="q6" value="0"> Solo en el celular o PC</label><br>
+                </div>
+                <div class="question">
+                    <p>7. ¿Qué hacés cuando querés cocinar algo nuevo?</p>
+                    <label><input type="radio" name="q7" value="2"> Busco en YouTube o Google</label><br>
+                    <label><input type="radio" name="q7" value="1"> Uso una app de recetas</label><br>
+                    <label><input type="radio" name="q7" value="0"> Le pregunto a alguien o uso un libro</label><br>
+                </div>
+                <div class="question">
+                    <p>8. ¿Cómo escuchás música?</p>
+                    <label><input type="radio" name="q8" value="2"> Spotify, YouTube, etc.</label><br>
+                    <label><input type="radio" name="q8" value="1"> Archivos MP3 bajados</label><br>
+                    <label><input type="radio" name="q8" value="0"> Radio, CDs o vinilos</label><br>
+                </div>
+                <div class="question">
+                    <p>9. ¿Usás apps para hacer ejercicio o entrenar?</p>
+                    <label><input type="radio" name="q9" value="2"> Sí, las necesito</label><br>
+                    <label><input type="radio" name="q9" value="1"> A veces</label><br>
+                    <label><input type="radio" name="q9" value="0"> No, me guío solo o con papel</label><br>
+                    <label><input type="radio" name="q9" value="0"> No entreno</label><br>
+                </div>
+                <div class="question">
+                    <p>10. ¿Cómo aprendés cosas nuevas?</p>
+                    <label><input type="radio" name="q10" value="2"> Videos o cursos online</label><br>
+                    <label><input type="radio" name="q10" value="1"> Mezcla de libros e Internet</label><br>
+                    <label><input type="radio" name="q10" value="0"> Solo libros o clases presenciales</label><br>
+                </div>
+                <button type="submit">Ver resultado</button>
+            </form>
+            <div id="result" class="hidden"></div>
+            <form id="internetTest"></form>
+        </section>
+    </main>
+    <footer>
+        Nuidaxeu - @copiright 2025
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

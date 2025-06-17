@@ -1,0 +1,511 @@
+body {
+    margin: 0;
+    font-family: Roboto Mono;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #121212;
+}
+
+
+div, body, header, nav, ul, footer, main {
+    box-sizing: border-box;
+}
+
+header, footer {
+    width: 100%;
+}
+
+h1,h2,h3,h4 {
+    text-wrap: balance;
+}
+
+p {
+    text-wrap: pretty;
+}
+
+
+/* ------------ HEADER ------------ */	
+
+header {
+    background: linear-gradient(#222a, #222a, transparent);
+    z-index: 800;
+    position: sticky;
+    top: 0;
+}
+
+
+.main-navbar ul {
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    font-family: Orbitron;
+}
+
+.main-navbar li {
+    list-style-type: none;
+    margin: 4px;
+}
+
+.main-navbar a {
+    color: #fff;
+    display: inline-block;
+    padding: 6px 19px;
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+
+
+/* ------------ MAIN SECTION ------------ */
+
+#impacto {
+    color: #E0E0E0;
+    padding: 50px;
+    text-align: center;
+}
+
+
+
+h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-top: 48px;
+    margin-bottom: 48px;
+    background-color: #1A1A1A;
+    color: #fff;
+    padding: 12px;
+    border-radius: 24px 24px 4px 4px;
+    margin-bottom: 28px;
+    border: 3px solid #CCCCCC;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: #2A2A2A;
+    border: 1px solid #CCCCCC;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card img {
+    width: 100%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #CCCCCC;
+}
+
+
+.reflexion {
+    margin: 40px auto;
+    width: 70%;
+    font-size: 1.2rem;
+    font-family: Orbitron;
+    color: #bbb;
+    background: #35353542;
+    padding: 20px;
+    border-left: 4px solid #fefefe;
+    border-radius: 0 25px 25px 0;
+}
+
+
+
+
+
+
+
+/* ------------ TIMELINE SECTION ------------ */
+
+.title, .week-title, .day-title, .month-title {
+    width: 70%;
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #E0E0E0;
+    font-size: 1.5rem;
+    text-align: center;
+    background: #1A1A1A;
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+    border-radius: 15px 15px 0 0;
+    border: 3px solid #cccccc;
+    border-bottom: none;
+    position: relative;
+    z-index: 200;
+}
+
+.day-title, .week-title, .month-title {
+    width: 100%;
+    margin: 0;
+}
+
+.timeline-container {
+    width: 70%;
+    max-width: 700px;
+    margin: 0 auto 2em auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+
+.timeline-container .wrapper {
+    width: 100%;
+    background: #2A2A2A;
+    padding: 2rem;
+    border-radius: 0 0 15px 15px;
+    margin-top: 0;
+    z-index: 100;
+}
+
+.sessions{
+    margin-top: 2rem;
+    border-radius: 12px;
+    position: relative;
+}
+.wrapper li{
+    padding-bottom: 1.5rem;
+    border-left: 1px solid #CCCCCC;
+    position: relative;
+    list-style-type: none;
+    padding-left: 20px;
+    margin-left: 10px;
+    &:last-child{
+        border: 0px;
+        padding-bottom: 0;
+        left: 1px;
+    }
+    &:before{
+        content: '';
+        width: 15px;
+        height: 15px;
+        background: white;
+        border-radius: 50%;
+        position: absolute;
+        left: -8px;
+        top: 0px;
+    }
+}
+.time{
+    color: #fefefe;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+.wrapper p{
+    color: #CCCCCC;
+    font-family: sans-serif;
+    line-height: 1.5;
+    margin-top:0.4rem;
+}
+
+
+.timerline-week_month {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 40px;
+    
+}
+
+
+/* ------------ TEST SEND ------------ */
+
+.quiz {
+    width: 100%;
+    background: #35353542;
+    color: #E0E0E0;
+    border-top: 0.2em solid #CCCCCC;
+    border-left: 0.2em solid #CCCCCC;
+    text-align: center;
+}
+
+
+.button {
+    background-color: #ffffff00;
+    color: #fff;
+    font-family: Orbitron;    
+    width: 8.5em;
+    height: 2.9em;
+    margin-bottom: 24px;
+    border-top: 0.2em solid #CCCCCC;
+    border-left: 0.2em solid #CCCCCC;
+    border-radius: 11px;
+    text-align: right;
+    transition: all 0.6s ease;
+}
+
+.button:hover {
+    background-color: #CCCCCC;
+    cursor: pointer;
+}
+
+.button svg {
+    width: 1.6em;
+    margin: -0.2em 0.8em 1em;
+    position: absolute;
+    display: flex;
+    transition: all 0.6s ease;
+}
+
+.button:hover svg {
+    transform: translateX(5px);
+}
+
+.text {
+    margin: 0 1.5em
+}
+
+/* ------------ FOOTER SECTION ------------ */
+
+footer {
+    width: 100%;
+    font-size: 1rem;
+    font-family: Orbitron;
+    background-color: #1A1A1A;
+    color: #E0E0E0;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+
+}
+
+/* ------------ TIMELINE DUO ------------ */
+
+.timeline-duo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    width: 100%;
+    margin: 0 auto 2em auto;
+}
+
+.timeline-duo .timeline-container {
+    width: 48%;
+    max-width: 500px;
+    min-width: 280px;
+}
+
+@media (max-width: 1000px) {
+    .timeline-duo {
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+    }
+    .timeline-duo .timeline-container {
+        width: 100%;
+        max-width: 700px;
+        min-width: unset;
+    }
+}
+
+@media (max-width: 868px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .wrapper ul, li{
+        padding: 0;
+    }
+    
+    .wrapper li{
+        padding-left: 10px;
+        margin-left: 5px;
+    }
+    
+    .timerline-week_month {
+        flex-direction: column;
+        align-items: center;
+    }
+    .timerline-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #first-week {
+        width: 100dvw;
+    }
+
+    .wrapper {
+        padding: 1rem;
+    }
+    .wrapper h3 {
+        font-size: 1.2rem;
+    }
+    .wrapper p {
+        font-size: 0.9rem;
+    }
+    .reflexion {
+        display: none;
+    }
+    .title {
+        width: 100%;
+        margin-bottom: 10;
+        padding: 1rem;
+        font-size: 1.2rem;
+    }
+    .week-title, .month-title {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        position: static;
+        top: unset;
+    }
+
+    .month-title {
+        position: relative;
+        top: 44rem;
+    }
+    .title, .week-title, .day-title, .month-title, .timeline-container {
+        width: 100%;
+        max-width: none;
+    }
+    .timeline-container {
+        margin: 0 0 2em 0;
+    }
+    .main-navbar {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .main-navbar ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5em;
+        padding: 0.5em 1em;
+    }
+
+    .main-navbar ul li {
+        margin-bottom: 0.5em;
+    }
+
+    .title-main h1, .title h3, .week-title h3, .day-title h3 {
+        font-size: 1.3em;
+        text-align: center;
+        padding: 0.5em 0.2em;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+        padding: 0;
+    }
+
+    .card {
+        width: 90vw;
+        min-width: unset;
+        max-width: 98vw;
+        margin: 0.5em 0;
+        padding: 1em;
+        box-sizing: border-box;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+        max-height: 180px;
+        object-fit: cover;
+    }
+
+    .timeline-container {
+        padding: 0.5em 0.2em;
+        width: 100vw;
+        box-sizing: border-box;
+    }
+
+    .sessions {
+        padding: 0;
+        margin: 0;
+    }
+
+    .sessions li {
+        margin-bottom: 1em;
+        padding: 0.7em;
+        border-radius: 8px;
+        font-size: 1em;
+    }
+
+    .quiz {
+        width: 95vw;
+        margin: 1em auto;
+        padding: 1em 0.5em;
+        box-sizing: border-box;
+        font-size: 1em;
+    }
+
+    .button {
+        width: 100%;
+        font-size: 1em;
+        padding: 0.7em 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .button svg {
+        width: 1.5em;
+        height: 1.5em;
+        margin-right: 0.5em;
+    }
+
+    .timeline-container .title, .timeline-container .title.day-title, .timeline-container .title.week-title {
+        font-size: 1.1em;
+        padding: 0.5em 0.2em;
+        margin-bottom: 0.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        padding: 0.5em;
+    }
+    .title-main h1,
+    .title h3,
+    .week-title h3,
+    .day-title h3 {
+        font-size: 1em;
+    }
+    .quiz h4 {
+        font-size: 1em;
+    }
+}

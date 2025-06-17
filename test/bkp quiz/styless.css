@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    font-family: Roboto Mono;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ededed;
+}
+
+div, body, header, nav, ul, footer, main {
+    box-sizing: border-box;
+    
+}
+
+.main-wrapper, header, footer {
+    width: 100%;
+}
+
+h1,h2,h3,h4 {
+    text-wrap: balance;
+}
+
+p {
+    text-wrap: pretty;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* ------------ HEADER SECTION ------------ */	
+
+header {
+    background: linear-gradient(#000, #000b, transparent);
+    z-index: 800;
+}
+
+
+.main-navbar ul {
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    font-family: Orbitron;
+}
+
+.main-navbar li {
+    list-style: none;
+    margin: 4px;
+}
+
+.main-navbar a {
+    color: #fff;
+    display: inline-block;
+    padding: 6px 19px;
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+/* ------------ MAIN SECTION ------------ */
+
+.main-container {
+    background-color: #48e;
+    width: 100dvw;
+    height: 100dvh;
+    padding: 50px;
+    text-align: center;
+}
+
+
+.test {
+    max-width: 700px;
+    margin: 60px auto;
+    color: #fff;
+    font-family: 'Courier New', monospace;
+    background-color: #111;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.test h2 {
+    text-align: center;
+    color: #0ff;
+    margin-bottom: 20px;
+}
+
+.question {
+    margin-bottom: 25px;
+}
+
+button {
+    background-color: #0ff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #000;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0cc;
+}
+
+
+#result {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+/* ------------ FOOTER SECTION ------------ */
+
+footer {
+    margin: auto;
+    margin-top: -35px;
+    margin-bottom: -49px;
+    background-color: #121212f6;
+    color: #fff;
+    padding: 40px;
+    font-family: Orbitron;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    top: -50px;
+}
+
+
+
